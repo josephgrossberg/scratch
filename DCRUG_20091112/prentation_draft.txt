@@ -21,10 +21,10 @@ ActiveRecord
 * can be used outside of Rails; not only choice for Rails; default
 
 Convention over Configuration
-* how does it know what maps to what?
+* how does Rails know what maps to what?
 * show examples from RfJD:
   - POJO - Person.java
   - Hibernate - person.hbm.xml
-* show Ruby example (empty Person class)
+* show AR example (almost-empty person.rb file)
 
 * CRUD, validations, callbacks, associations (do we have time for this?)
