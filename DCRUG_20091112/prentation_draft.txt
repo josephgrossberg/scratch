@@ -1,0 +1,20 @@
+Five steps to get a very simple Rails app up and running:
+ rails dcrug
+ cd dcrug
+ script/generate scaffold Person first_name:string last_name:string
+ rake db:migrate
+ script/server
+
+* Talk about web vs. database vs. script/console for dealing w/ models
+- browser advantages: visual, what end-user sees
+- browser disadvantages: indirect, limited to forms and links
+- database advantages: speed, might already know SQL
+- database disadvantages: no access to Ruby, vendor-specific, validations not enforced
+- script/console advantages: speed, working in Ruby directly
+- script/console disadvantages: you have to learn something new (which is *good* -- why we're here)
+* We'll go with a combination of browser and script/console for this tutorial
+
+ActiveRecord
+* name comes from a pattern in Martin Powler's PoEAA
+* ORM -- stores Ruby objects with attributes and values in a relational database with tables, columns and rows
+* table -> class  /  column -> attribute  /  row -> instance and values
