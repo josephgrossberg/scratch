@@ -1,0 +1,17 @@
+<!--
+ ! Excerpted from "Rails For Java Programmers"
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/fr_r4j for more book information.
+-->
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="Person" table="people">
+    <id name="id" type="java.lang.Long">
+      <generator class="native"/>
+    </id>
+    <property name="firstName" type="string" column="first_name"/>
+    <property name="lastName" type="string" column="last_name"/>
+  </class>
+</hibernate-mapping>
